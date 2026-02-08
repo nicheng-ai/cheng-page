@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "about": "About",
+    "research": "Research",
+    "news": "News",
+    "blog": "Blog",
+    "projects": "Projects"
+  },
+  "profile": {
+    "contact": "Contact"
+  },
+  "news": {
+    "title": "Latest News",
+    "loading": "Loading...",
+    "error": "Failed to load"
+  },
+  "research": {
+    "title": "Research Interests",
+    "interests": "Research Areas",
+    "questions": "Key Questions",
+    "currentFocus": "Current Focus"
+  },
+  "bio": {
+    "title": "About Me"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Failed to load, please try again"
+  }
+}

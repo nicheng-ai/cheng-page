@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "about": "关于",
+    "research": "研究",
+    "news": "动态",
+    "blog": "博客",
+    "projects": "项目"
+  },
+  "profile": {
+    "contact": "联系方式"
+  },
+  "news": {
+    "title": "最新动态",
+    "loading": "加载中...",
+    "error": "加载失败"
+  },
+  "research": {
+    "title": "研究兴趣",
+    "interests": "研究领域",
+    "questions": "核心问题",
+    "currentFocus": "当前关注"
+  },
+  "bio": {
+    "title": "关于我"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "加载失败，请重试"
+  }
+}
