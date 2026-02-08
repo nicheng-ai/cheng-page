@@ -1,0 +1,14 @@
+{
+  "name": "倪城",
+  "name_chinese": "倪城",
+  "name_english": "Cheng Ni",
+  "title": "软件工程师 / 创业者",
+  "institution": {
+    "name": "独立开发者",
+    "url": "https://github.com/sigeward"
+  },
+  "email": "chengni2001@gmail.com",
+  "bio": "<p>你好！我是倪城，一名热爱技术的软件工程师和创业者。我致力于利用前沿技术解决实际问题，创造有价值的产品。</p><p>我拥有扎实的全栈开发经验，熟悉现代 Web 技术栈，包括 React、TypeScript、Python 等。我相信技术的力量可以改变世界，让生活变得更美好。</p>",
+  "goal": "用技术改变世界，创造有价值的产品",
+  "image_filename": "profile.jpg"
+}

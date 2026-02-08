@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "date": "02/2026",
+      "date_full": "2026-02-08",
+      "content": "🚀 Launched personal website project with modern React + TypeScript + FastAPI architecture",
+      "type": "milestone"
+    },
+    {
+      "id": 2,
+      "date": "02/2026",
+      "date_full": "2026-02-01",
+      "content": "Started exploring practical applications of Large Language Models in real projects",
+      "type": "project"
+    },
+    {
+      "id": 3,
+      "date": "01/2026",
+      "date_full": "2026-01-15",
+      "content": "Completed full-stack development skill advancement, mastering React, TypeScript, FastAPI, and other modern technologies",
+      "type": "award"
+    }
+  ]
+}

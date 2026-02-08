@@ -1,0 +1,14 @@
+{
+  "name": "Cheng Ni",
+  "name_chinese": "倪城",
+  "name_english": "Cheng Ni",
+  "title": "Software Engineer / Entrepreneur",
+  "institution": {
+    "name": "Independent Developer",
+    "url": "https://github.com/sigeward"
+  },
+  "email": "chengni2001@gmail.com",
+  "bio": "<p>Hello! I'm Cheng Ni, a passionate software engineer and entrepreneur. I'm dedicated to leveraging cutting-edge technology to solve real-world problems and create valuable products.</p><p>With solid full-stack development experience, I'm proficient in modern web technologies including React, TypeScript, Python, and more. I believe in the power of technology to change the world and make life better.</p>",
+  "goal": "Change the world with technology and create valuable products",
+  "image_filename": "profile.jpg"
+}

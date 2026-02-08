@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "date": "02/2026",
+      "date_full": "2026-02-08",
+      "content": "🚀 启动个人网站项目，采用 React + TypeScript + FastAPI 现代化架构",
+      "type": "milestone"
+    },
+    {
+      "id": 2,
+      "date": "02/2026",
+      "date_full": "2026-02-01",
+      "content": "开始探索大语言模型在实际项目中的应用场景",
+      "type": "project"
+    },
+    {
+      "id": 3,
+      "date": "01/2026",
+      "date_full": "2026-01-15",
+      "content": "完成全栈开发技能进阶，掌握 React、TypeScript、FastAPI 等现代技术栈",
+      "type": "award"
+    }
+  ]
+}
