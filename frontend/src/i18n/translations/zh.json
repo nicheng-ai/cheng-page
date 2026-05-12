@@ -1,27 +1,33 @@
 {
   "nav": {
+    "name": "倪城",
     "about": "关于",
-    "research": "研究",
-    "news": "动态",
     "blog": "博客",
-    "projects": "项目"
+    "travels": "足迹"
   },
-  "profile": {
-    "contact": "联系方式"
-  },
-  "news": {
-    "title": "最新动态",
-    "loading": "加载中...",
-    "error": "加载失败"
-  },
-  "research": {
-    "title": "研究兴趣",
+  "about": {
+    "bio": "个人简介",
+    "research": "研究兴趣",
     "interests": "研究领域",
     "questions": "核心问题",
-    "currentFocus": "当前关注"
+    "currentFocus": "当前关注",
+    "publications": "研究成果",
+    "pubVenue": "发表于",
+    "contact": "联系方式",
+    "social": "社交链接",
+    "news": "最新动态"
   },
-  "bio": {
-    "title": "关于我"
+  "blog": {
+    "title": "博客",
+    "empty": "暂无内容",
+    "comingSoon": "文章功能即将上线"
+  },
+  "travels": {
+    "title": "我去过的地方",
+    "lived": "居住过",
+    "visited": "到访过",
+    "total": "共 {n} 个地方",
+    "listTitle": "地点列表"
   },
   "common": {
     "loading": "加载中...",

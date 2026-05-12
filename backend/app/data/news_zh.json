@@ -1,25 +1,18 @@
 {
   "items": [
     {
-      "id": 1,
-      "date": "02/2026",
-      "date_full": "2026-02-08",
-      "content": "🚀 启动个人网站项目，采用 React + TypeScript + FastAPI 现代化架构",
+      "id": 2,
+      "date": "05/2026",
+      "date_full": "2026-05-01",
+      "content": "<span style=\"font-weight:600\">获得种子轮投资：</span>南京创新投资集团 · 2025 年第四批次青年大学生优秀创业项目",
       "type": "milestone"
     },
     {
-      "id": 2,
-      "date": "02/2026",
-      "date_full": "2026-02-01",
-      "content": "开始探索大语言模型在实际项目中的应用场景",
-      "type": "project"
-    },
-    {
-      "id": 3,
-      "date": "01/2026",
-      "date_full": "2026-01-15",
-      "content": "完成全栈开发技能进阶，掌握 React、TypeScript、FastAPI 等现代技术栈",
-      "type": "award"
+      "id": 1,
+      "date": "08/2025",
+      "date_full": "2025-08-18",
+      "content": "<span style=\"font-weight:600\">创立公司：</span>上智涌现 MindSparks AI（阿里中心）· 产品 <a href=\"https://mianbaolab.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#3b82f6\">@面包面试</a>",
+      "type": "milestone"
     }
   ]
 }

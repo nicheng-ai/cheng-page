@@ -1,0 +1,14 @@
+{
+  "places": [
+    { "id": 1, "name": "温州", "country": "中国", "lat": 28.0000, "lng": 120.6720, "type": "lived", "note": "家乡" },
+    { "id": 2, "name": "北京", "country": "中国", "lat": 39.9042, "lng": 116.4074, "type": "lived", "note": "曾居住" },
+    { "id": 3, "name": "南京", "country": "中国", "lat": 32.0603, "lng": 118.7969, "type": "lived", "note": "曾居住" },
+    { "id": 4, "name": "深圳", "country": "中国", "lat": 22.5431, "lng": 114.0579, "type": "lived", "note": "曾居住" },
+    { "id": 5, "name": "武汉", "country": "中国", "lat": 30.5928, "lng": 114.3055, "type": "lived", "note": "曾居住" },
+    { "id": 6, "name": "上海", "country": "中国", "lat": 31.2304, "lng": 121.4737, "type": "visited", "note": "" },
+    { "id": 7, "name": "青岛", "country": "中国", "lat": 36.0671, "lng": 120.3826, "type": "visited", "note": "" },
+    { "id": 8, "name": "济南", "country": "中国", "lat": 36.6512, "lng": 117.1201, "type": "visited", "note": "" },
+    { "id": 9, "name": "厦门", "country": "中国", "lat": 24.4798, "lng": 118.0894, "type": "visited", "note": "" },
+    { "id": 10, "name": "呼伦贝尔", "country": "中国", "lat": 49.2123, "lng": 119.7654, "type": "visited", "note": "内蒙古" }
+  ]
+}

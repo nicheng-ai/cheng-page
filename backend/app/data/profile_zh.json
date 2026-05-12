@@ -2,13 +2,16 @@
   "name": "倪城",
   "name_chinese": "倪城",
   "name_english": "Cheng Ni",
-  "title": "软件工程师 / 创业者",
+  "title": "创始人 & CEO",
   "institution": {
-    "name": "独立开发者",
-    "url": "https://github.com/sigeward"
+    "name": "东南大学",
+    "url": "https://www.seu.edu.cn"
   },
+  "university": "东南大学",
+  "degree": "博士在读",
+  "age": 24,
   "email": "chengni2001@gmail.com",
-  "bio": "<p>你好！我是倪城，一名热爱技术的软件工程师和创业者。我致力于利用前沿技术解决实际问题，创造有价值的产品。</p><p>我拥有扎实的全栈开发经验，熟悉现代 Web 技术栈，包括 React、TypeScript、Python 等。我相信技术的力量可以改变世界，让生活变得更美好。</p>",
-  "goal": "用技术改变世界，创造有价值的产品",
+  "bio": "<p><a href=\"https://mindsparksai.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#3b82f6\">南京上智涌现科技有限公司（MindSparks AI）</a>创始人 & CEO。</p><p>现为东南大学卓越工程师学院硕博连读在读生，师从 EDA 国家创新中心 <a href=\"https://ic.seu.edu.cn/wx/main.htm\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#3b82f6\">王翕博士</a>，研究方向为 AI for Chip，专注于 LLM 验证加速、IP 自动生成与 LLM 赋能硬件敏捷开发。本科毕业于武汉科技大学电子科学与技术专业，专业第一。</p>",
+  "goal": "用 AI Agent 技术构建下一代智能产品",
   "image_filename": "profile.jpg"
 }

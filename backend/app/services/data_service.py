@@ -77,3 +77,9 @@ class DataService:
             Social links data dictionary
         """
         return self._load_json("social.json")
+
+    def load_travels(self) -> Dict[str, Any]:
+        return self._load_json("travels.json")
+
+    def load_publications(self) -> Dict[str, Any]:
+        return self._load_json("publications.json")

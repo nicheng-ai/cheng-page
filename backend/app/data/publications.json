@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "示例论文标题（待补充）",
+      "title_en": "Sample Paper Title (To be added)",
+      "authors": "倪城, 王翕 et al.",
+      "venue": "Conference / Journal",
+      "venue_short": "CONF",
+      "year": 2024,
+      "url": "",
+      "tags": ["AI Agent", "LLM"]
+    }
+  ]
+}

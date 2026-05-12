@@ -15,8 +15,10 @@ class ProfileResponse(BaseModel):
     name_chinese: str
     name_english: str
     title: str
-    institution: Institution
-    university: Optional[Institution] = None
+    institution: Optional[Institution] = None
+    university: Optional[str] = None
+    degree: Optional[str] = None
+    age: Optional[int] = None
     email: EmailStr
     bio: str
     goal: str

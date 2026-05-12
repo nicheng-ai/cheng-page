@@ -6,6 +6,7 @@ from typing import List
 class SocialLink(BaseModel):
     """Single social link model"""
     name: str
+    name_en: str = ""
     url: str
     icon: str
 

@@ -1,27 +1,33 @@
 {
   "nav": {
+    "name": "Cheng Ni",
     "about": "About",
-    "research": "Research",
-    "news": "News",
     "blog": "Blog",
-    "projects": "Projects"
+    "travels": "Travels"
   },
-  "profile": {
-    "contact": "Contact"
-  },
-  "news": {
-    "title": "Latest News",
-    "loading": "Loading...",
-    "error": "Failed to load"
-  },
-  "research": {
-    "title": "Research Interests",
+  "about": {
+    "bio": "About Me",
+    "research": "Interest",
     "interests": "Research Areas",
     "questions": "Key Questions",
-    "currentFocus": "Current Focus"
+    "currentFocus": "Current Focus",
+    "publications": "Publications",
+    "pubVenue": "Venue",
+    "contact": "Contact",
+    "social": "Social",
+    "news": "News"
   },
-  "bio": {
-    "title": "About Me"
+  "blog": {
+    "title": "Blog",
+    "empty": "No posts yet",
+    "comingSoon": "Articles coming soon"
+  },
+  "travels": {
+    "title": "Places I've Been",
+    "lived": "Lived",
+    "visited": "Visited",
+    "total": "{n} places total",
+    "listTitle": "Places"
   },
   "common": {
     "loading": "Loading...",

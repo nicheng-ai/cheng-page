@@ -2,18 +2,33 @@
   "links": [
     {
       "name": "GitHub",
+      "name_en": "GitHub",
       "url": "https://github.com/sigeward",
       "icon": "github"
     },
     {
       "name": "Email",
+      "name_en": "Email",
       "url": "mailto:chengni2001@gmail.com",
       "icon": "mail"
     },
     {
       "name": "LinkedIn",
+      "name_en": "LinkedIn",
       "url": "https://linkedin.com/in/chengni",
       "icon": "linkedin"
+    },
+    {
+      "name": "Google Scholar",
+      "name_en": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=hcKE6r4AAAAJ&hl=zh-CN",
+      "icon": "scholar"
+    },
+    {
+      "name": "小红书",
+      "name_en": "RedNote",
+      "url": "https://www.xiaohongshu.com/user/profile/63832530000000001f01cce3",
+      "icon": "rednote"
     }
   ]
 }

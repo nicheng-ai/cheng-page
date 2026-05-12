@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pathlib import Path
 
-from app.api.routes import profile, research, news, social
+from app.api.routes import profile, research, news, social, travels, publications
 
 app = FastAPI(
     title="Personal Website API",
@@ -33,6 +33,8 @@ app.include_router(profile.router, prefix="/api", tags=["profile"])
 app.include_router(research.router, prefix="/api", tags=["research"])
 app.include_router(news.router, prefix="/api", tags=["news"])
 app.include_router(social.router, prefix="/api", tags=["social"])
+app.include_router(travels.router, prefix="/api", tags=["travels"])
+app.include_router(publications.router, prefix="/api", tags=["publications"])
 
 @app.get("/")
 async def root():

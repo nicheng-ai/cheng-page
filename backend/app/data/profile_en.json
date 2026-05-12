@@ -2,13 +2,16 @@
   "name": "Cheng Ni",
   "name_chinese": "倪城",
   "name_english": "Cheng Ni",
-  "title": "Software Engineer / Entrepreneur",
+  "title": "Founder & CEO",
   "institution": {
-    "name": "Independent Developer",
-    "url": "https://github.com/sigeward"
+    "name": "Southeast University",
+    "url": "https://www.seu.edu.cn"
   },
+  "university": "Southeast University",
+  "degree": "Ph.D. Candidate",
+  "age": 24,
   "email": "chengni2001@gmail.com",
-  "bio": "<p>Hello! I'm Cheng Ni, a passionate software engineer and entrepreneur. I'm dedicated to leveraging cutting-edge technology to solve real-world problems and create valuable products.</p><p>With solid full-stack development experience, I'm proficient in modern web technologies including React, TypeScript, Python, and more. I believe in the power of technology to change the world and make life better.</p>",
-  "goal": "Change the world with technology and create valuable products",
+  "bio": "<p>I am the Founder & CEO of <a href=\"https://mindsparksai.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#3b82f6\">MindSparks AI</a>.</p><p>I am a combined Master-Ph.D. student at the School of Excellent Engineers, Southeast University, advised by <a href=\"https://ic.seu.edu.cn/wx/main.htm\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color:#3b82f6\">Dr. Wang Xi</a> at the EDA National Innovation Center. My research is in AI for Chip — focusing on LLM-accelerated verification, IP auto-generation, and LLM-enabled agile hardware development. Before that, I received my B.S. in Electronic Science and Technology from Wuhan University of Science and Technology, graduating first in my major.</p>",
+  "goal": "Building next-generation intelligent products with AI Agent technology",
   "image_filename": "profile.jpg"
 }
