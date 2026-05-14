@@ -4,7 +4,9 @@ import { LanguageProvider } from './i18n/LanguageContext';
 import { Navbar } from './components/layout/Navbar';
 import { AboutPage } from './pages/AboutPage';
 import { BlogPage } from './pages/BlogPage';
+import { BlogPostPage } from './pages/BlogPostPage';
 import { TravelsPage } from './pages/TravelsPage';
+import { PublicationsPage } from './pages/PublicationsPage';
 
 const App = () => {
   return (
@@ -16,7 +18,9 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Navigate to="/about" replace />} />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="/publications" element={<PublicationsPage />} />
               <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:id" element={<BlogPostPage />} />
               <Route path="/travels" element={<TravelsPage />} />
             </Routes>
           </div>
