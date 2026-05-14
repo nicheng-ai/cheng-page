@@ -1,9 +1,8 @@
-import { Github, Mail, Linkedin, FlaskConical, Target, ExternalLink } from 'lucide-react';
+import { Github, Mail, Linkedin, FlaskConical, Target } from 'lucide-react';
 import { useProfile } from '../hooks/useProfile';
 import { useResearch } from '../hooks/useResearch';
 import { useSocialLinks } from '../hooks/useSocialLinks';
 import { useNews } from '../hooks/useNews';
-import { usePublications } from '../hooks/usePublications';
 import { useTranslation } from '../i18n/useTranslation';
 import { profileImageUrl } from '../api/client';
 
@@ -33,7 +32,6 @@ export const AboutPage = () => {
   const { research, loading: rLoading } = useResearch();
   const { socialLinks } = useSocialLinks();
   const { news, loading: nLoading } = useNews();
-  const { data: pubData } = usePublications();
   const { t, language } = useTranslation();
 
   if (pLoading || rLoading || nLoading) {
@@ -45,27 +43,28 @@ export const AboutPage = () => {
   }
 
   return (
-    <main className="max-w-5xl mx-auto px-6 py-12">
+    <main className="max-w-5xl mx-auto px-6 py-10">
       {/* Hero */}
-      <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center mb-14">
-        <img
-          src={profileImageUrl}
-          alt={profile?.name}
-          onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          className="w-28 h-36 rounded-xl object-cover object-top flex-shrink-0 ring-1 ring-gray-200 dark:ring-gray-700"
-        />
-        <div className="flex-1">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-            {language === 'en' ? (profile?.name_english || profile?.name) : profile?.name}
-          </h1>
-          {/* Show the other-language name as subtitle */}
-          {language === 'en'
-            ? profile?.name_chinese && <p className="text-lg text-gray-500 dark:text-gray-400 mb-2">{profile.name_chinese}</p>
-            : profile?.name_english && <p className="text-lg text-gray-500 dark:text-gray-400 mb-2">{profile.name_english}</p>
-          }
-          <p className="text-base text-blue-600 dark:text-blue-400 font-medium mb-4">
+      <section className="flex flex-col-reverse md:flex-row gap-8 lg:gap-12 items-start mb-16">
+        <div className="flex-1 min-w-0">
+          <div className="flex items-end gap-4 mb-3">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-950 dark:text-gray-50">
+              {language === 'en' ? (profile?.name_english || profile?.name) : profile?.name}
+            </h1>
+            {/* Show the other-language name as subtitle on the same line */}
+            <span className="text-2xl sm:text-3xl text-gray-500 dark:text-gray-400 mb-0.5 font-normal">
+              {language === 'en' ? profile?.name_chinese : profile?.name_english}
+            </span>
+          </div>
+          
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 font-medium mb-6">
             {profile?.title}
           </p>
+          
+          <div
+            className="text-base sm:text-lg text-gray-800 dark:text-gray-200 leading-8 break-words [&_a]:break-all mb-7 [&_strong]:font-semibold [&_strong]:text-gray-950 dark:[&_strong]:text-gray-50 text-justify"
+            dangerouslySetInnerHTML={{ __html: profile?.bio || '' }}
+          />
           {socialLinks && (
             <div className="flex flex-wrap gap-3">
               {socialLinks.links.map(link => (
@@ -85,21 +84,19 @@ export const AboutPage = () => {
             </div>
           )}
         </div>
-      </div>
+        <div className="w-48 sm:w-56 md:w-64 flex-shrink-0 mx-auto md:mx-0">
+          <img
+            src={profileImageUrl}
+            alt={profile?.name}
+            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
+            className="w-full aspect-[4/5] object-cover object-center rounded-xl ring-1 ring-gray-200 dark:ring-gray-700 shadow-sm"
+          />
+        </div>
+      </section>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        {/* Left: Bio + Research + News */}
+        {/* Left: Research + News */}
         <div className="lg:col-span-2 space-y-10">
-          <section>
-            <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">
-              {t('about.bio')}
-            </h2>
-            <div
-              className="prose prose-gray dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: profile?.bio || '' }}
-            />
-          </section>
-
           {research && (
             <section>
               <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">
@@ -150,48 +147,6 @@ export const AboutPage = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-            </section>
-          )}
-          {/* Publications */}
-          {pubData && pubData.items.length > 0 && (
-            <section>
-              <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-5">
-                {t('about.publications')}
-              </h2>
-              <div className="space-y-4">
-                {pubData.items.map((pub, i) => (
-                  <div key={pub.id} className="flex gap-4 items-start">
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-500 text-xs font-bold flex items-center justify-center mt-0.5">
-                      {i + 1}
-                    </span>
-                    <div className="flex-1">
-                      <div className="flex items-start justify-between gap-2">
-                        <p className="text-sm font-medium text-gray-800 dark:text-gray-200 leading-snug">
-                          {language === 'en' ? pub.title_en : pub.title}
-                        </p>
-                        {pub.url && (
-                          <a href={pub.url} target="_blank" rel="noopener noreferrer"
-                            className="flex-shrink-0 text-gray-400 hover:text-blue-500 transition-colors mt-0.5">
-                            <ExternalLink className="w-3.5 h-3.5" />
-                          </a>
-                        )}
-                      </div>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{pub.authors}</p>
-                      <div className="flex items-center gap-2 mt-1.5 flex-wrap">
-                        <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">
-                          {pub.venue_short}
-                        </span>
-                        <span className="text-xs text-gray-400">{pub.year}</span>
-                        {pub.tags.map(tag => (
-                          <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ))}
               </div>
             </section>
           )}
