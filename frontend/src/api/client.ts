@@ -8,6 +8,8 @@ import researchEn from '../../../backend/app/data/research_en.json';
 import researchZh from '../../../backend/app/data/research_zh.json';
 import social from '../../../backend/app/data/social.json';
 import travels from '../../../backend/app/data/travels.json';
+import blogsEn from '../../../backend/app/data/blogs_en.json';
+import blogsZh from '../../../backend/app/data/blogs_zh.json';
 import profileImage from '../../../backend/app/data/images/profile.jpg';
 
 // API base URL - defaults to localhost for development
@@ -22,6 +24,7 @@ const localizedData = {
   news: { en: newsEn, zh: newsZh },
   profile: { en: profileEn, zh: profileZh },
   research: { en: researchEn, zh: researchZh },
+  blogs: { en: blogsEn, zh: blogsZh },
 } as const;
 
 const staticApi = {
@@ -38,6 +41,8 @@ const staticApi = {
           return localizedData.profile[lang];
         case 'research':
           return localizedData.research[lang];
+        case 'blogs':
+          return localizedData.blogs[lang];
         case 'publications':
           return publications;
         case 'social-links':
