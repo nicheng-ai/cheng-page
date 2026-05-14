@@ -1,10 +1,11 @@
-import { Github, Mail, Linkedin, FlaskConical, BookOpen, Target, ExternalLink } from 'lucide-react';
+import { Github, Mail, Linkedin, FlaskConical, Target, ExternalLink } from 'lucide-react';
 import { useProfile } from '../hooks/useProfile';
 import { useResearch } from '../hooks/useResearch';
 import { useSocialLinks } from '../hooks/useSocialLinks';
 import { useNews } from '../hooks/useNews';
 import { usePublications } from '../hooks/usePublications';
 import { useTranslation } from '../i18n/useTranslation';
+import { profileImageUrl } from '../api/client';
 
 const ScholarIcon = () => (
   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -48,7 +49,7 @@ export const AboutPage = () => {
       {/* Hero */}
       <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center mb-14">
         <img
-          src="http://localhost:8000/api/profile-image"
+          src={profileImageUrl}
           alt={profile?.name}
           onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
           className="w-28 h-36 rounded-xl object-cover object-top flex-shrink-0 ring-1 ring-gray-200 dark:ring-gray-700"

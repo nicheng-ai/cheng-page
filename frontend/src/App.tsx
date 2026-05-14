@@ -8,7 +8,7 @@ import { TravelsPage } from './pages/TravelsPage';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ThemeProvider>
         <LanguageProvider>
           <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">

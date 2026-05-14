@@ -5,6 +5,7 @@ import { useTranslation } from '../i18n/useTranslation';
 import type { Place } from '../types/travels';
 
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
+type GeographyData = { rsmKey: string } & Record<string, unknown>;
 
 const markerStyle = (type: Place['type']) =>
   type === 'lived'
@@ -67,7 +68,7 @@ export const TravelsPage = () => {
             >
               <ZoomableGroup>
                 <Geographies geography={GEO_URL}>
-                  {({ geographies }) =>
+                  {({ geographies }: { geographies: GeographyData[] }) =>
                     geographies.map(geo => (
                       <Geography
                         key={geo.rsmKey}
