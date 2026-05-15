@@ -9,6 +9,7 @@
     { "id": 7, "name": "青岛", "country": "中国", "lat": 36.0671, "lng": 120.3826, "type": "visited", "note": "" },
     { "id": 8, "name": "济南", "country": "中国", "lat": 36.6512, "lng": 117.1201, "type": "visited", "note": "" },
     { "id": 9, "name": "厦门", "country": "中国", "lat": 24.4798, "lng": 118.0894, "type": "visited", "note": "" },
-    { "id": 10, "name": "呼伦贝尔", "country": "中国", "lat": 49.2123, "lng": 119.7654, "type": "visited", "note": "内蒙古" }
+    { "id": 10, "name": "呼伦贝尔", "country": "中国", "lat": 49.2123, "lng": 119.7654, "type": "visited", "note": "内蒙古" },
+    { "id": 11, "name": "惠州", "country": "中国", "lat": 23.1115, "lng": 114.4152, "type": "visited", "note": "广东" }
   ]
 }
