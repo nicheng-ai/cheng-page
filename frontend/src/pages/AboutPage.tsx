@@ -1,4 +1,4 @@
-import { Mail, FlaskConical, Target } from 'lucide-react';
+import { Eye, Mail, FlaskConical, Target, Users } from 'lucide-react';
 import { useProfile } from '../hooks/useProfile';
 import { useResearch } from '../hooks/useResearch';
 import { useSocialLinks } from '../hooks/useSocialLinks';
@@ -213,6 +213,27 @@ export const AboutPage = () => {
                 {profile.institution.name}
               </a>
             )}
+          </div>
+          <div id="busuanzi_container_site_pv" className="mt-4 rounded-xl border border-gray-200 dark:border-gray-800 p-5 bg-gray-50 dark:bg-gray-800/50">
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">
+              {t('about.visits')}
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <div className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 mb-1">
+                  <Eye className="w-3.5 h-3.5" />
+                  {t('about.pageViews')}
+                </div>
+                <div id="busuanzi_value_site_pv" className="text-lg font-semibold text-gray-900 dark:text-gray-100">--</div>
+              </div>
+              <div>
+                <div className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 mb-1">
+                  <Users className="w-3.5 h-3.5" />
+                  {t('about.visitors')}
+                </div>
+                <div id="busuanzi_value_site_uv" className="text-lg font-semibold text-gray-900 dark:text-gray-100">--</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

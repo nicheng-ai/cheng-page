@@ -16,6 +16,9 @@
     "pubVenue": "Venue",
     "contact": "Contact",
     "social": "Social",
+    "visits": "Visits",
+    "pageViews": "Page views",
+    "visitors": "Visitors",
     "news": "News"
   },
   "blog": {
