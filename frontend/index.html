@@ -1,10 +1,73 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cheng Ni - Personal Website</title>
+    <title>倪城 Cheng Ni - Founder, Researcher, AI for Chip</title>
+    <meta
+      name="description"
+      content="倪城（Cheng Ni），南京上智涌现科技有限公司（MindSparks AI）创始人兼 CEO，东南大学卓越工程师学院硕博连读在读生，研究方向为 AI for Chip、LLM 验证加速、IP 自动生成与 LLM 赋能硬件敏捷开发。"
+    />
+    <meta
+      name="keywords"
+      content="倪城,Cheng Ni,Ni Cheng,MindSparks AI,上智涌现,东南大学,AI for Chip,LLM 验证加速,IP 自动生成,EDA,ZK-Tracer,DAC"
+    />
+    <meta name="author" content="倪城 Cheng Ni" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://nicheng-ai.github.io/cheng-page/" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="倪城 Cheng Ni" />
+    <meta property="og:title" content="倪城 Cheng Ni - Founder, Researcher, AI for Chip" />
+    <meta
+      property="og:description"
+      content="倪城（Cheng Ni），MindSparks AI 创始人兼 CEO，东南大学卓越工程师学院硕博连读在读生，研究方向为 AI for Chip。"
+    />
+    <meta property="og:url" content="https://nicheng-ai.github.io/cheng-page/" />
+    <meta property="og:image" content="https://nicheng-ai.github.io/cheng-page/profile.jpg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="倪城 Cheng Ni - Founder, Researcher, AI for Chip" />
+    <meta
+      name="twitter:description"
+      content="倪城（Cheng Ni），MindSparks AI 创始人兼 CEO，东南大学卓越工程师学院硕博连读在读生。"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "倪城",
+        "alternateName": ["Cheng Ni", "Ni Cheng"],
+        "url": "https://nicheng-ai.github.io/cheng-page/",
+        "image": "https://nicheng-ai.github.io/cheng-page/profile.jpg",
+        "email": "mailto:chengni2001@gmail.com",
+        "jobTitle": "Founder & CEO",
+        "affiliation": [
+          {
+            "@type": "Organization",
+            "name": "MindSparks AI",
+            "url": "https://mindsparksai.com"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Southeast University",
+            "url": "https://www.seu.edu.cn"
+          }
+        ],
+        "knowsAbout": [
+          "AI for Chip",
+          "LLM-accelerated verification",
+          "IP auto-generation",
+          "EDA",
+          "Zero-Knowledge VM",
+          "Hardware acceleration"
+        ],
+        "sameAs": [
+          "https://arxiv.org/pdf/2605.25493"
+        ]
+      }
+    </script>
     <script>
       // Prevent dark mode flicker
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -14,6 +77,21 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main>
+        <h1>倪城 Cheng Ni</h1>
+        <p>
+          倪城（Cheng Ni），南京上智涌现科技有限公司（MindSparks AI）创始人兼 CEO，
+          东南大学卓越工程师学院硕博连读在读生，研究方向为 AI for Chip、LLM 验证加速、
+          IP 自动生成与 LLM 赋能硬件敏捷开发。
+        </p>
+        <p>
+          Publication: ZK-Tracer: A High-Performance Heterogeneous Accelerator for
+          Zero-Knowledge VM Trace Generation.
+          <a href="https://arxiv.org/pdf/2605.25493">Read the paper on arXiv</a>.
+        </p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -2,14 +2,15 @@
   "items": [
     {
       "id": 1,
-      "title": "示例论文标题（待补充）",
-      "title_en": "Sample Paper Title (To be added)",
-      "authors": "倪城, 王翕 et al.",
-      "venue": "Conference / Journal",
-      "venue_short": "CONF",
-      "year": 2024,
-      "url": "",
-      "tags": ["AI Agent", "LLM"]
+      "title": "ZK-Tracer: A High-Performance Heterogeneous Accelerator for Zero-Knowledge VM Trace Generation",
+      "title_en": "ZK-Tracer: A High-Performance Heterogeneous Accelerator for Zero-Knowledge VM Trace Generation",
+      "authors": "Jieran Cui, Zhengkai Wen, Haowen Fang, Yinan Zhu, Jia Xiong, Cheng Ni, Mingchi Zhang, Nan Guan, Xi Wang",
+      "venue": "Design Automation Conference (DAC), 2026",
+      "venue_short": "DAC",
+      "year": 2026,
+      "url": "https://arxiv.org/pdf/2605.25493",
+      "thumbnail": "publications/zk-tracer.png",
+      "tags": ["ZKP", "zkVM", "Hardware Accelerator"]
     }
   ]
 }

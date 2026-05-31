@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nicheng-ai.github.io/cheng-page/sitemap.xml

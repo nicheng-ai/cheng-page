@@ -27,12 +27,22 @@ const ScholarIcon = () => (
   </svg>
 );
 
-// 小红书 — red rounded square with stylised "书" mark
+// RedNote / 小红书 — compact app mark
 const RedNoteIcon = () => (
-  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none">
-    <rect width="24" height="24" rx="6" fill="#FF2442"/>
-    <path d="M7 8.5h6.5M7 12h10M7 15.5h8" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
-    <circle cx="17" cy="8.5" r="1.5" fill="white"/>
+  <svg className="w-4 h-4" viewBox="0 0 24 24" role="img" aria-label="RedNote">
+    <rect width="24" height="24" rx="6" fill="#ff2442" />
+    <text
+      x="12"
+      y="15.5"
+      textAnchor="middle"
+      fontSize="11"
+      fontWeight="800"
+      fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+      fill="white"
+    >
+      书
+    </text>
+    <circle cx="18" cy="6" r="1.4" fill="white" opacity="0.9" />
   </svg>
 );
 

@@ -7,6 +7,7 @@ export interface Publication {
   venue_short: string;
   year: number;
   url: string;
+  thumbnail?: string;
   tags: string[];
 }
 
