@@ -44,35 +44,28 @@ export const PublicationsPage = () => {
 
       {pubData && pubData.items.length > 0 ? (
         <div className="space-y-6">
-          {pubData.items.map(pub => (
-            <div key={pub.id} className="flex gap-4 sm:gap-5 items-start p-5 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-shadow">
+          {pubData.items.map(pub => {
+            const content = (
+              <>
               {pub.thumbnail && (
-                <a href={pub.url || assetUrl(pub.thumbnail)} target="_blank" rel="noopener noreferrer"
+                <div
                   className="hidden sm:block flex-shrink-0 w-24 overflow-hidden rounded-md border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-950">
                   <img
                     src={assetUrl(pub.thumbnail)}
                     alt={`${pub.title_en} preview`}
                     className="w-full aspect-[3/4] object-cover object-top"
                   />
-                </a>
+                </div>
               )}
               <div className="flex-1 min-w-0">
                 <div className="flex items-start justify-between gap-4 mb-2">
-                  {pub.url ? (
-                    <a href={pub.url} target="_blank" rel="noopener noreferrer"
-                      className="text-lg font-bold text-gray-900 dark:text-gray-100 leading-snug hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                      {language === 'en' ? pub.title_en : pub.title}
-                    </a>
-                  ) : (
-                    <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100 leading-snug">
-                      {language === 'en' ? pub.title_en : pub.title}
-                    </h2>
-                  )}
+                  <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100 leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {language === 'en' ? pub.title_en : pub.title}
+                  </h2>
                   {pub.url && (
-                    <a href={pub.url} target="_blank" rel="noopener noreferrer" aria-label={`Open ${pub.title_en}`}
-                      className="flex-shrink-0 text-gray-400 hover:text-blue-500 transition-colors mt-1">
+                    <span className="flex-shrink-0 text-gray-400 group-hover:text-blue-500 transition-colors mt-1">
                       <ExternalLink className="w-4 h-4" />
-                    </a>
+                    </span>
                   )}
                 </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">{renderAuthors(pub.authors)}</p>
@@ -90,8 +83,24 @@ export const PublicationsPage = () => {
                   ))}
                 </div>
               </div>
-            </div>
-          ))}
+              </>
+            );
+
+            return pub.url ? (
+              <a
+                key={pub.id}
+                href={pub.url}
+                aria-label={`Open ${pub.title_en}`}
+                className="group flex gap-4 sm:gap-5 items-start p-5 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-shadow"
+              >
+                {content}
+              </a>
+            ) : (
+              <div key={pub.id} className="flex gap-4 sm:gap-5 items-start p-5 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm">
+                {content}
+              </div>
+            );
+          })}
         </div>
       ) : (
         <div className="text-center py-20 border border-dashed border-gray-200 dark:border-gray-800 rounded-2xl">
